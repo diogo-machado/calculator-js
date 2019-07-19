@@ -21,8 +21,8 @@ let evalStringArray = [];
 const calcNumBtns = document.getElementsByClassName('calc-btn-num');
 const calcOperatorsBtns = document.getElementsByClassName('calc-btn-operator');
 
-const updateDisplayVal = (clickObj) => {
-  const btnText = clickObj.target.innerText;
+const updateDisplayVal = (event) => {
+  const btnText = event.target.innerText;
 
   if (displayVal === '0') {
     displayVal = '';
@@ -33,8 +33,8 @@ const updateDisplayVal = (clickObj) => {
 }
 
 
-const performOperation = (clickObj) => {
-  const operator = clickObj.target.innerText;
+const performOperation = (event) => {
+  const operator = event.target.innerText;
 
   switch (operator) {
     case '+':
@@ -99,6 +99,7 @@ backspaceBtn.onclick = () => {
 
   if (displayVal === '') {
     displayVal = '0';
+    displayValElement.innerText = displayVal;
   }
 }
 

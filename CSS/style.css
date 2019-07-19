@@ -85,6 +85,9 @@ h1 {
   white-space: nowrap;
   padding: 12px;
   border-radius: 7px 7px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .calc-btn-operator {
