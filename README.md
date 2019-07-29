@@ -1,4 +1,4 @@
-# CalculatorReactApp
+# Calculator-JS
 
 Functional calculator built using HTML,CSS and JavaScript.
 
